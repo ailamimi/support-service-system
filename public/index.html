@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <!-- LOGIN TEMPLATE -->
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="./Flatkit/assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="./Flatkit/assets/images/logo.png">
+
+  <!-- style -->
+  <link rel="stylesheet" href="./Flatkit/assets/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="./Flatkit/assets/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="./Flatkit/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="./Flatkit/assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+  <link rel="stylesheet" href="./Flatkit/assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="./Flatkit/assets/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="./Flatkit/assets/styles/font.css" type="text/css" />
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+  <!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+<script src="./Flatkit/libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="./Flatkit/libs/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="./Flatkit/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="./Flatkit/libs/jquery/underscore/underscore-min.js"></script>
+  <script src="./Flatkit/libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="./Flatkit/libs/jquery/PACE/pace.min.js"></script>
+
+  <script src="./Flatkit/scripts/config.lazyload.js"></script>
+
+  <script src="./Flatkit/scripts/palette.js"></script>
+  <script src="./Flatkit/scripts/ui-load.js"></script>
+  <script src="./Flatkits/cripts/ui-jp.js"></script>
+  <script src="./Flatkit/scripts/ui-include.js"></script>
+  <script src="./Flatkit/scripts/ui-device.js"></script>
+  <script src="./Flatkit/scripts/ui-form.js"></script>
+  <script src="./Flatkit/scripts/ui-nav.js"></script>
+  <script src="./Flatkit/scripts/ui-screenfull.js"></script>
+  <script src="./Flatkit/scripts/ui-scroll-to.js"></script>
+  <script src="./Flatkit/scripts/ui-toggle-class.js"></script>
+
+  <script src="./Flatkitscripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="./Flatkit/libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="./Flatkit/scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+
 </html>
+
